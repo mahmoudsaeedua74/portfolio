@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
-const AnimatedCodeView = () => {
+const AnimatedCodeView = () => { 
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -29,7 +29,7 @@ const AnimatedCodeView = () => {
       variants={item}
       initial="hidden"
       whileInView="show"
-      viewport={{ amount:.2 }}
+      viewport={{ amount:.2 , once:true }}
       style={{ display: "block" }}
     >
       {children}
@@ -40,31 +40,30 @@ const AnimatedCodeView = () => {
       variants={container}
       initial="hidden"
       whileInView="show"
-      viewport={{ amount:.2 }}
-      className="bg-[#282c34] overflow-x-auto w-full max-w-screen-lg mx-auto my-20 p-8 text-white rounded-lg shadow-xl"
+      viewport={{ amount:.2 ,once:true }}
+      className="bg-zinc-900/80 overflow-x-auto w-full shadow-2xl max-w-screen-lg mx-auto text-lg font-semibold my-20 p-8 text-white rounded-lg "
     >
       <pre className="whitespace-pre-wrap">
         <code className="text-[#9cdcfe]">
           <AnimatedLine>
-            1. <span className="text-[#af00db]">export default</span>{" "}
-            <span className="text-[#2727ff]">function</span>{" "}
-            <span className="text-yellow-600">AboutMe()</span> {"{"}
+            1. <span className="text-fuchsia-600">export default</span>{" "}
+            <span className="text-blue-700">function</span>{" "}
+            <span className="text-amber-600">AboutMe() {"{"}</span>  
           </AnimatedLine>
 
           <AnimatedLine>
-            2. &nbsp;&nbsp;<span className="text-[#2727ff]">const</span>{" "}
-            <span className="text-[#1b775c]">WhoAmI</span> = {"{"}
+            2. &nbsp;&nbsp;<span className="text-blue-700">const</span>{" "}
+            <span className="text-green-700">WhoAmI</span> = <span className="text-fuchsia-600"> {"{"}</span>
           </AnimatedLine>
-
           <AnimatedLine>
             3. &nbsp;&nbsp;&nbsp;&nbsp;
-            <span className="text-[#4D5BCE]">name:</span>{" "}
+            <span className="text-sky-400">name:</span>{" "}
             <span className="text-[#E99287]">&quot;Mahmoud Saeed&quot;</span>,
           </AnimatedLine>
 
           <AnimatedLine>
             4. &nbsp;&nbsp;&nbsp;&nbsp;
-            <span className="text-[#4D5BCE]">aboutMe:</span> {"{"}
+            <span className="text-sky-400">aboutMe:</span> {"{"}
           </AnimatedLine>
 
           <AnimatedLine>
@@ -111,7 +110,7 @@ const AnimatedCodeView = () => {
 
           <AnimatedLine>
             11. &nbsp;&nbsp;&nbsp;&nbsp;
-            <span className="text-[#4D5BCE]">skills:</span> {"{"}
+            <span className="text-sky-400">skills:</span> {"{"}
           </AnimatedLine>
 
           <AnimatedLine>
@@ -169,23 +168,23 @@ const AnimatedCodeView = () => {
 
           <AnimatedLine>20. &nbsp;&nbsp;&nbsp;&nbsp;{"]"},</AnimatedLine>
 
-          <AnimatedLine>21. &nbsp;&nbsp;{"},"};</AnimatedLine>
+          <AnimatedLine>21. <span className="text-fuchsia-600">&nbsp;&nbsp;{"}"}</span></AnimatedLine>
 
           <AnimatedLine>
-            22. &nbsp;&nbsp;<span className="text-[#af00db]">return</span>{" "}
+            22. &nbsp;&nbsp;<span className="text-fuchsia-600">return</span>{" "}
             <span className="text-[#E99287]">
-              <span className="text-[#af00db]">{"("}</span>
+              <span className="text-fuchsia-600">{"("}</span>
               <span className="text-[#4D5BCE]"> {"{"}</span>{" "}
               <span className="text-green-700">
                 {"/* Let me share my journey with you.. */"}{" "}
               </span>
               <span className="text-[#4D5BCE]">{"}"}</span>
-              <span className="text-[#af00db]">{" )"}</span>
+              <span className="text-fuchsia-600">{" )"}</span>
             </span>
             ;
           </AnimatedLine>
 
-          <AnimatedLine>23. {"}"}</AnimatedLine>
+          <AnimatedLine>23. <span className="text-amber-600"> {"}"}</span></AnimatedLine>
         </code>
       </pre>
     </motion.div>

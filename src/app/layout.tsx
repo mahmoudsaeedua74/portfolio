@@ -23,12 +23,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" >
+    <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 relative  dark:bg-[#011627] dark:text-gray-50 dark:text-opacity-90`}
+        className={`${geistSans.variable} ${geistMono.variable} 
+        antialiased bg-[#e5e5f7]
+      bg-opacity-80
+       bg-[radial-gradient(#3b3b44_.25px,transparent_.25px),radial-gradient(#3b3b44_.25px,#e5e5f7_.25px)]
+        bg-[size:50px_50px] bg-[position:0_0,25px_25px] relative  overflow-x-hidden
+          dark:bg-[#000319]
+           dark:bg-[radial-gradient(#888eff_0.85px,transparent_0.85px),radial-gradient(#888eff_0.85px,#000319_0.85px)]
+            dark:bg-[size:34px_34px] dark:bg-[position:0_0,17px_17px] dark:text-gray-50 dark:text-opacity-90`}
       >
-        <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-1 h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#37364b]"></div>
-        <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#3e3d50]"></div>
         <Navbar />
         {children}
       </body>

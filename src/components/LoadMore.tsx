@@ -14,7 +14,7 @@ export default function LoadMore() {
         window.scrollTo({ top: window.innerHeight, behavior: "smooth" })
       }
     >
-      <div className="flex flex-col justify-center items-center mt-40 cursor-pointer">
+      <div className="flex flex-col justify-center items-center mt-8 cursor-pointer">
         {" "}
         <p className="text-indigo-500  font-semibold text-lg">
           There’s more about me

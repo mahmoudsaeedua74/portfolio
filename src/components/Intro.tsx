@@ -45,7 +45,11 @@ export default function Intro() {
   };
   return (
     <>
-      <section className=" md:gap-1 gap-2 sm:text-start text-center  lg:flex-row flex justify-evenly flex-col-reverse items-center md:items-start mt-52 overflow-hidden  cursor-default  my-20">
+      <section
+        id="home"
+        className=" md:gap-1 gap-2 sm:text-start text-center 
+        lg:flex-row flex justify-evenly flex-col-reverse items-center md:items-start mt-52 overflow-hidden  cursor-default  my-20"
+      >
         <div className="px-4 sm:px-6 lg:px-8">
           <motion.p
             className="text-2xl sm:text-3xl lg:text-[36px] text-stone-950 dark:text-[#E5E9F0] font-medium"
@@ -168,7 +172,7 @@ export default function Intro() {
           </div>
         </div>
         <motion.div
-          className="mt-10  w-[400px] h-[600px]  mx-auto  "
+          className="mt-10  w-[280px] sm:w-[400px] h-[600px]  mx-auto  "
           initial={{ opacity: 0, y: 150 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 3.6, duration: 0.5 }}

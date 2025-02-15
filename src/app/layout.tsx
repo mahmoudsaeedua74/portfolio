@@ -32,7 +32,7 @@ export default function RootLayout({
         bg-[size:50px_50px] bg-[position:0_0,25px_25px] relative  overflow-x-hidden
           dark:bg-[#000319]
            dark:bg-[radial-gradient(#888eff_0.85px,transparent_0.85px),radial-gradient(#888eff_0.85px,#000319_0.85px)]
-            dark:bg-[size:34px_34px] dark:bg-[position:0_0,17px_17px] dark:text-gray-50 dark:text-opacity-90`}
+            dark:bg-[size:34px_34px] dark:bg-[position:0_0,17px_17px] dark:text-gray-50 dark:text-opacity-90  `}
       >
         <Navbar />
         {children}

@@ -1,32 +1,13 @@
 "use client";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { useEffect } from "react";
-
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [visible, setVisible] = useState(true);
-  useEffect(() => {
-    let lastScrollY = window.scrollY;
-
-    const handleScroll = () => {
-      if (window.scrollY > lastScrollY + 20) {
-        setVisible(false);
-      } else if (window.scrollY < lastScrollY - 20) {
-        setVisible(true);
-      }
-      lastScrollY = window.scrollY;
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
   return (
     <>
       <div>
         <button
-          className="relative group block sm:hidden"
+          className="relative group block sm:hidden m-2"
           onClick={() => setIsOpen(!isOpen)}
         >
           <div
@@ -42,7 +23,7 @@ export default function Navbar() {
         </button>
       </div>
       <header className="z-[999] relative">
-        {visible ? (
+     
           <motion.nav
             className={`" 
             ${
@@ -97,32 +78,35 @@ export default function Navbar() {
                   </button>
                 </div>
               )}
-              <Link
+              <a
                 className="hover:text-slate-700 duration-150 transition-colors cursor-pointer"
-                href={""}
+               href="#home"
               >
                 Home
-              </Link>
-              <li className="hover:text-slate-700 duration-150 transition-colors cursor-pointer">
+              </a>
+              <a href="#Project"  className="hover:text-slate-700 duration-150 transition-colors cursor-pointer">
                 Project
-              </li>
-              <Link
+              </a>
+              <a
                 className="hover:text-slate-700 duration-150 transition-colors cursor-pointer"
-                href={""}
+                href="#Journey"
               >
                 Journey
-              </Link>
-              <li className="hover:text-slate-700 duration-150 transition-colors cursor-pointer">
-                Education
-              </li>
-              <li className="hover:text-slate-700 duration-150 transition-colors cursor-pointer">
+              </a>
+              <a 
+              href="#About"
+              className="hover:text-slate-700 duration-150 transition-colors cursor-pointer">
+                About
+              </a>
+              <a href="#Contact"
+              
+              className="hover:text-slate-700 duration-150 transition-colors cursor-pointer">
                 Contact
-              </li>
+              </a>
             </ul>
           </motion.nav>
-        ) : (
-          ""
-        )}
+        
+       
       </header>
     </>
   );

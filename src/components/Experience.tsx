@@ -33,7 +33,7 @@ import { TbBrandFramerMotion } from "react-icons/tb";
   },
   {
     icon: <SiRedux  className="text-[#7548B2]" />,
-    name: "Redux ",
+    name: "framer motion",
   },
 ];
  const bottomRowSkills = [
@@ -99,7 +99,7 @@ export default function Experience() {
         >
           {/* Top Row - Right to Left */}
           <motion.div
-            className="flex justify-around items-center"
+            className="flex justify-around  flex-wrap  gap-5 items-center"
             initial={{ x: 100 }}
             animate={{ x: 0 }}
             transition={{
@@ -130,7 +130,7 @@ export default function Experience() {
             ))}
           </motion.div>
           <motion.div
-            className="flex justify-around items-center"
+            className="flex justify-around items-center flex-wrap  gap-5 "
             initial={{ x: -100 }}
             animate={{ x: 0 }}
             transition={{

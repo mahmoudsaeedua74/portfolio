@@ -39,7 +39,7 @@ const ContactForm: React.FC = () => {
     setIsLoading(false);
   };
   return (
-    <section className="px-4 py-8 md:py-16 max-w-7xl mx-auto">
+    <section  id="Contact" className="px-4 py-8 md:py-16 max-w-7xl mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 capitalize">
         {/* Contact Info */}
         <div className="text-gray-800 dark:text-indigo-200 space-y-6 md:space-y-8">

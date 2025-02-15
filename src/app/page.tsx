@@ -17,7 +17,7 @@ export default function Home() {
       <main className="container">
         <Intro />
       </main>
-      <section className="container">
+      <section className="container  overflow-x-hidden">
         <LoadMore />
         <About />
         <Journey />

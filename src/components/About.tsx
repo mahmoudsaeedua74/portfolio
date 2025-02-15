@@ -36,7 +36,8 @@ const AnimatedCodeView = () => {
     </motion.div>
   );
   return (
-    <motion.div
+    <motion.div 
+    id="About"
       variants={container}
       initial="hidden"
       whileInView="show"

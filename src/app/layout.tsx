@@ -12,9 +12,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio ",
-  description:
-    "this is a Portfolio Website use Next.js App, Framer Motion, TypeScript, Tailwind CSS, Email",
+  title: "Portfolio",
+  description: "this is a Portfolio Website use Next.js App, Framer Motion, TypeScript, Tailwind CSS, Email",
+  robots: {
+    index: true,  
+    follow: true, 
+  },
 };
 
 export default function RootLayout({

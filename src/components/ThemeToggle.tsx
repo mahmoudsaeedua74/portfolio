@@ -25,12 +25,8 @@ const ThemeToggle = () => {
   };
 
   return (
-    <div aria-label="toggle dark" role="button"
-     className="fixed bottom-5 transform -translate-y-1/2 right-4  rounded-full shadow-2xl  "
->
-     
+    <div aria-label="toggle dark" role="button" className="fixed bottom-5 transform -translate-y-1/2 right-4  rounded-full shadow-2xl ">
       <input
-
         type="checkbox"
         id="checkbox"
         className="hidden"

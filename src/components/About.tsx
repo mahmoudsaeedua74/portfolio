@@ -12,7 +12,6 @@ const AnimatedCodeView = () => {
       },
     },
   };
-
   const item = {
     hidden: { opacity: 0, x: -50 },
     show: {
@@ -23,7 +22,6 @@ const AnimatedCodeView = () => {
       },
     },
   };
-  // Reusable animated line component
   const AnimatedLine = ({ children }: { children: ReactNode }) => (
     <motion.div
       variants={item}

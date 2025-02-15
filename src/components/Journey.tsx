@@ -37,9 +37,9 @@ export default function Journey() {
       ref={sectionRef}
       className="w-full font-semibold px-4 md:px-8 lg:w-[85%] xl:w-[70%] mx-auto my-10 md:my-20 relative min-h-screen"
     >
-      <h1 className="font-bold  mb-12 text-gray-800 dark:text-indigo-100 text-center text-4xl">
+      <h2 className="font-bold  mb-12 text-gray-800 dark:text-indigo-100 text-center text-4xl">
         My Journey
-      </h1>
+      </h2>
       <motion.ol
         className="relative border-l border-gray-200 dark:border-gray-700 ml-3 md:ml-4"
         variants={container}

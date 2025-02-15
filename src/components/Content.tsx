@@ -105,6 +105,7 @@ const ContactForm: React.FC = () => {
             />
             <div className="flex justify-center md:justify-start">
               <button
+              type="submit" aria-label="Submit form"
                 disabled={isLoading}
                 className="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md"
               >

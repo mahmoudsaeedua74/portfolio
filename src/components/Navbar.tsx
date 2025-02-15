@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   return (
     <>
       <div>
@@ -81,24 +81,25 @@ export default function Navbar() {
               <a
                 className="hover:text-slate-700 duration-150 transition-colors cursor-pointer"
                href="#home"
+               onClick={() => setIsOpen(!isOpen)}
               >
                 Home
               </a>
-              <a href="#Project"  className="hover:text-slate-700 duration-150 transition-colors cursor-pointer">
+              <a href="#Project"   onClick={() => setIsOpen(!isOpen)} className="hover:text-slate-700 duration-150 transition-colors cursor-pointer">
                 Project
               </a>
               <a
-                className="hover:text-slate-700 duration-150 transition-colors cursor-pointer"
+                className="hover:text-slate-700 duration-150 transition-colors cursor-pointer"  onClick={() => setIsOpen(!isOpen)}
                 href="#Journey"
               >
                 Journey
               </a>
               <a 
-              href="#About"
+              href="#About"  onClick={() => setIsOpen(!isOpen)}
               className="hover:text-slate-700 duration-150 transition-colors cursor-pointer">
                 About
               </a>
-              <a href="#Contact"
+              <a href="#Contact"  onClick={() => setIsOpen(!isOpen)}
               
               className="hover:text-slate-700 duration-150 transition-colors cursor-pointer">
                 Contact

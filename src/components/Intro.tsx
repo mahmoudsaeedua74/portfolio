@@ -48,7 +48,7 @@ export default function Intro() {
       <section
         id="home"
         className=" md:gap-1 gap-2 sm:text-start text-center 
-        lg:flex-row flex justify-evenly flex-col-reverse items-center md:items-start mt-52 overflow-hidden  cursor-default  my-20"
+        lg:flex-row flex justify-evenly flex-col-reverse items-center md:items-start mt-10 sm:mt-52 overflow-hidden  cursor-default  my-20"
       >
         <div className="px-4 sm:px-6 lg:px-8">
           <motion.p
@@ -175,7 +175,7 @@ export default function Intro() {
           </div>
         </div>
         <motion.div
-          className="mt-10  w-[280px] sm:w-[400px] h-[600px]  mx-auto  "
+          className="mt-10  w-[280px] sm:w-[400px] sm:h-[600px] h-[400px]  mx-auto  "
           initial={{ opacity: 0, y: 150 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 3.6, duration: 0.5 }}

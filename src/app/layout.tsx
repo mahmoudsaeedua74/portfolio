@@ -1,22 +1,20 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Fira_Code } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+
+const FiraCode = Fira_Code({
+  variable: "--Fira-Code",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
   title: "Portfolio",
-  description: "this is a Portfolio Website use Next.js App, Framer Motion, TypeScript, Tailwind CSS, Email",
+  description:
+    "this is a Portfolio Website use Next.js App, Framer Motion, TypeScript, Tailwind CSS, Email",
   robots: {
-    index: true,  
-    follow: true, 
+    index: true,
+    follow: true,
   },
 };
 
@@ -26,9 +24,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} 
+        className={`${FiraCode.variable} 
         antialiased bg-[#e5e5f7]
       bg-opacity-80
        bg-[radial-gradient(#3b3b44_.25px,transparent_.25px),radial-gradient(#3b3b44_.25px,#e5e5f7_.25px)]

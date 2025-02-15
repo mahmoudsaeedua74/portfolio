@@ -33,7 +33,7 @@ import { TbBrandFramerMotion } from "react-icons/tb";
   },
   {
     icon: <SiRedux  className="text-[#7548B2]" />,
-    name: "framer motion",
+    name: "Redux",
   },
 ];
  const bottomRowSkills = [

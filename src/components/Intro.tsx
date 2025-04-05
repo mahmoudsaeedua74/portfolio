@@ -142,10 +142,10 @@ export default function Intro() {
               <span className="text-[#4D5BCE]">const</span>{" "}
               <span className="text-[#1b775c] font-bold">MyResume</span> =
               <a 
-                href="https://drive.google.com/file/d/1azFTTPdmhnOcNaxW9w8-AK5MRXGyPXWc/view?usp=sharing"
+                href="https://drive.google.com/file/d/1zB5E1egYL9aRBmDOkd4wFLOC7bj_zb4o/view"
                 target="_blank"
                 download={
-                  "https://drive.google.com/file/d/1azFTTPdmhnOcNaxW9w8-AK5MRXGyPXWc/view?usp=sharing"
+                  "https://drive.google.com/file/d/1zB5E1egYL9aRBmDOkd4wFLOC7bj_zb4o/view"
                 }
                 rel="noopener noreferrer"
                 className="text-[#E99287]  hover:scale-105 transition-all duration-200"

@@ -39,7 +39,7 @@ const ContactForm: React.FC = () => {
     setIsLoading(false);
   };
   return (
-    <section  id="Contact" className="px-4 py-8 md:py-16 max-w-7xl mx-auto">
+    <section id="contact" className="px-4 py-8 md:py-16 max-w-7xl mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 capitalize">
         {/* Contact Info */}
         <div className="text-gray-800 dark:text-indigo-200 space-y-6 md:space-y-8">
@@ -49,10 +49,10 @@ const ContactForm: React.FC = () => {
           <ul className="text-xl md:text-2xl lg:text-3xl space-y-4 md:space-y-8 font-semibold">
             <li className="break-words">
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=mahmoudsaeed0112074@gmail.com"
+                href="https://drive.google.com/file/d/1zB5E1egYL9aRBmDOkd4wFLOC7bj_zb4o/view"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-indigo-400 transition-colors duration-200"
+                className="transition-colors duration-200"
               >
                 <span>mail:</span> mahmoudsaeed0112074@gmail.com
               </a>
@@ -68,7 +68,9 @@ const ContactForm: React.FC = () => {
 
         {/* Contact Form */}
         <div className="bg-white dark:bg-slate-900/70 text-gray-800 dark:text-indigo-200 p-4 md:p-6 rounded-lg shadow-md">
-          <h3 className="text-xl md:text-2xl font-semibold mb-4">Get in Touch</h3>
+          <h3 className="text-xl md:text-2xl font-semibold mb-4">
+            Get in Touch
+          </h3>
           <form onSubmit={handleSubmit} className="space-y-4">
             <input
               type="text"
@@ -105,18 +107,23 @@ const ContactForm: React.FC = () => {
             />
             <div className="flex justify-center md:justify-start">
               <button
-              type="submit" aria-label="Submit form"
+                type="submit"
+                aria-label="Submit form"
                 disabled={isLoading}
                 className="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md"
               >
-                <span className="w-full h-full
+                <span
+                  className="w-full h-full
                  bg-gradient-to-br 
                 from-[#ff8a05] via-[#ff5478] to-[#ff00c6] 
                   group-hover:from-[#ff00c6] 
                   group-hover:via-[#ff5478]
-                   group-hover:to-[#ff8a05] absolute" />
-                <span className="relative px-4 md:px-6 py-2 md:py-3 transition-all ease-out bg-gray-900 rounded-md 
-                  group-hover:bg-opacity-0 duration-400">
+                   group-hover:to-[#ff8a05] absolute"
+                />
+                <span
+                  className="relative px-4 md:px-6 py-2 md:py-3 transition-all ease-out bg-gray-900 rounded-md 
+                  group-hover:bg-opacity-0 duration-400"
+                >
                   <span className="relative text-white text-sm md:text-base">
                     {isLoading ? "sending.." : "Send Message"}
                   </span>

@@ -164,7 +164,7 @@ export default function Intro() {
               <span className="text-[#4D5BCE]">const</span>{" "}
               <span className="text-[#1b775c] font-bold">getContact</span> =
               <a
-                href="#contact"
+                href="#Contact"
                 rel="noopener noreferrer"
                 className="text-[#E99287]  hover:scale-105 transition-all duration-200"
               >
